@@ -18,8 +18,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         pressMeButton = (Button) findViewById(R.id.pressMeButton);
-        pressMeButton.setOnClickListener(new View.OnClickListener(){
-            Toast.makeTest(MainActivity.this, "Press me!", Toast.LENGTH_SHORT)
+        pressMeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Press me!", Toast.LENGTH_SHORT);
+            }
         });
     }
 
